@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Website</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <div class="navbar-logo">
+                <div class="navbar-logo-title">
+                    <img src="img/Logo.png" alt="Logo" width="80" height="80" />
+                    <h1>FLY AND GO</h1>
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Our Profile</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#contact">Message Us</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+<section id="home" class="home-section">
+        <h2>Hi <span id="dynamicName">Guest</span>, Welcome To FLY AND GO</h2>
+        <p>Solusi transportasi udara modern dan efisien untuk Indonesia.</p>
+        <div class="home-image-placeholder"></div>
+    </section>
+    <section id="about" class="about-section">
+        <h3>Our Headquarter</h3>
+        <p>
+            Pesawat terbang adalah moda transportasi tercepat yang digunakan saat ini. Waktu tempuh yang dibutuhkan pesawat untuk mencapai satu daerah ke daerah yang lain adalah yang paling cepat dibandingkan moda transportasi yang lainnya. Jangkauan dari pesawat terbang bahkan dapat mencapai antar benua. Sehingga pesawat terbang menjadi pilihan pertama untuk melakukan perjalanan jauh karena waktu tempuhnya yang singkat.<br><br>
+            Saat ini, pesawat terbang banyak diminati masyarakat Indonesia. Namun, tingginya minat tersebut menimbulkan kendala dalam proses pembelian tiket di bandara, seperti penumpukan penumpang di berbagai bandara Indonesia. Oleh karena itu, FLY AND GO hadir sebagai perusahaan teknologi yang menyediakan solusi website pemesanan tiket pesawat secara online untuk memfasilitasi para penumpang dan mengurangi penumpukan di bandara.
+        </p>
+        <div class="headquarter-list">
+            <div class="hq-item">
+                <div class="hq-circle"></div>
+                <span>Jakarta</span>
+            </div>
+            <div class="hq-item">
+                <div class="hq-circle"></div>
+                <span>Bandung</span>
+            </div>
+            <div class="hq-item">
+                <div class="hq-circle"></div>
+                <span>Cimahi</span>
+            </div>
+        </div>
+    </section>
+        <section id="tujuan" class="tujuan-section">
+        <h3>Tujuan Kami</h3>
+        <p>
+            Tujuan utama FLY AND GO adalah menyediakan platform penjualan tiket online yang dapat memfasilitasi para penumpang pesawat. Kami menawarkan pilihan harga tiket dalam beberapa kelas, seperti ekonomi, premium, hingga VIP, untuk memenuhi kebutuhan berbagai kalangan.
+        </p>
+    </section>
+
+    <section id="manfaat" class="manfaat-section">
+        <h3>Manfaat FLY AND GO</h3>
+        <ul>
+            <li>
+                <b>Bagi Bandara:</b> Website FLY AND GO membantu mengurangi penumpukan di loket tiket bandara, mencegah keterlambatan penerbangan akibat antrean, dan mempermudah pendataan penumpang.
+            </li>
+            <li>
+                <b>Bagi Pelanggan:</b> Pelanggan dapat melihat informasi harga tiket penerbangan sesuai tujuan dan kelas yang dipilih, serta melakukan pemesanan tiket dengan mudah, cepat, dan aman secara online.
+            </li>
+        </ul>
+    </section>
+
+    <section id="portofolio" class="portofolio-section">
+        <h3>Portofolio Layanan FLY AND GO</h3>
+        <div class="portofolio-list">
+            <div class="portofolio-item">
+                <h4>Sistem Reservasi Online</h4>
+                <p>Platform pemesanan tiket pesawat yang mudah digunakan, dapat diakses kapan saja dan di mana saja.</p>
+            </div>
+            <div class="portofolio-item">
+                <h4>Integrasi Data Bandara</h4>
+                <p>Terhubung langsung dengan sistem bandara untuk memastikan data penerbangan dan tiket selalu up-to-date.</p>
+            </div>
+            <div class="portofolio-item">
+                <h4>Layanan Pelanggan 24 Jam</h4>
+                <p>Dukungan pelanggan profesional yang siap membantu kebutuhan dan pertanyaan Anda setiap saat.</p>
+            </div>
+        </div>
+    </section>
+       <section id="contact" class="message-section">
+        <h3>Message Us</h3>
+        <div class="message-container">
+            <form class="message-form" id="messageForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="08xxxxxxxxxx" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div class="message-result" id="messageResult">
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <span><b>Created By Muhammad Aiman Nurhakim</b></span>
+</footer>
+</body>
+<script src="/js/script.js"></script>
+</body>
+</html>
