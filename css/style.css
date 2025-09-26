@@ -8,7 +8,7 @@ body {
   position: relative;
   font-family: "Poppins", sans-serif;
   color: #333;
-  background-color: #e8f5f3;
+  background-color: #a7d5d6;
   animation: fadeIn 1s ease-out;
 }
 .navbar {
@@ -60,8 +60,7 @@ body {
 .home-section {
     margin-top: 100px;
     padding: 0;
-    background: linear-gradient(120deg, #e8f5f3 60%, #4F8EF7 100%);
-    border-bottom: 2px solid #bbb;
+    background-color: #a7d5d6;
     min-height: 600px;
     display: flex;
     flex-direction: row;
@@ -204,151 +203,236 @@ body {
     font-weight: 600;
     letter-spacing: 0.5px;
 }
-
+.hq-desc {
+    color: #444;
+    font-size: 1.08rem;
+    text-align: center;
+    margin-bottom: 24px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.92;
+}
 .vision-section {
-    background: #f7fafd;
-    padding: 40px 32px 40px 32px;
-    border-bottom: 2px solid #bbb;
-    max-width: 100vw;
+    background: #fff;
+    padding: 56px 32px 56px 32px;
+    border-bottom: 2px solid #e0e0e0;
+    max-width: 1200px;
     width: 100%;
-    margin: 0 auto 32px auto;
+    margin: 0 auto 36px auto;
     box-sizing: border-box;
-    border-radius: 0;
-    box-shadow: none;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(44,62,80,0.06);
+    transition: box-shadow 0.2s;
 }
 .vision-section h3 {
     color: #222;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 18px;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 24px;
     text-align: center;
     display: block;
     position: relative;
-    padding-bottom: 12px;
+    padding-bottom: 16px;
     width: 100%;
+    letter-spacing: 0.5px;
 }
 .vision-section h3::after {
     content: "";
     display: block;
-    margin: 12px auto 0 auto;
-    width: 80px;
-    height: 3px;
+    margin: 16px auto 0 auto;
+    width: 100px;
+    height: 4px;
     background: linear-gradient(90deg, #4F8EF7 0%, #16a085 100%);
     border-radius: 2px;
+    opacity: 0.8;
 }
-.vision-mission-container {
+.vision-mission-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 32px;
     justify-content: center;
     align-items: flex-start;
     margin-top: 18px;
 }
-.vision-block, .mission-block {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 1px 6px rgba(44,62,80,0.07);
-    padding: 24px 28px 20px 28px;
+.vision-mission-card {
+    background: #f7fafd;
+    border-radius: 16px;
+    box-shadow: 0 1px 6px rgba(44,62,80,0.09);
+    padding: 32px 28px 24px 28px;
     min-width: 260px;
     max-width: 400px;
     flex: 1 1 260px;
+    margin: 0 8px;
+    transition: box-shadow 0.2s;
 }
-.vision-block h4, .mission-block h4 {
+.vision-mission-card:hover {
+    box-shadow: 0 6px 18px rgba(44,62,80,0.16);
+}
+.vision-mission-card h4 {
     color: #16a085;
-    font-size: 1.18rem;
-    margin-bottom: 10px;
+    font-size: 1.22rem;
+    margin-bottom: 12px;
     font-weight: 700;
+    text-align: center;
 }
-.vision-block p, .mission-block ul {
+.vision-mission-card p, .vision-mission-card ul {
     color: #333;
-    font-size: 1.05rem;
-    line-height: 1.7;
+    font-size: 1.09rem;
+    line-height: 1.8;
     margin: 0;
+    text-align: left;
 }
-.mission-block ul {
+.vision-mission-card ul {
     padding-left: 18px;
     margin-top: 0;
 }
-.mission-block li {
-    margin-bottom: 10px;
+.vision-mission-card li {
+    margin-bottom: 12px;
 }
-.about-section, .tujuan-section, .manfaat-section, .portofolio-section {
-    background: #fff;
-    padding: 40px 32px 60px 32px;
-    border-bottom: 2px solid #bbb;
-    max-width: 100vw;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    border-radius: 0;
-    box-shadow: none;
+.headquarter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 24px;
 }
-.about-section h3, .tujuan-section h3, .manfaat-section h3, .portofolio-section h3 {
-    color: #222;
-    font-size: 1.5rem;
+.hq-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f7fafd;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.09);
+    padding: 24px 28px 18px 28px;
+    min-width: 220px;
+    max-width: 300px;
+    transition: transform 0.18s, box-shadow 0.18s;
+    margin-bottom: 8px;
+}
+.hq-card:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 6px 24px rgba(44,62,80,0.13);
+}
+.hq-img img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 14px;
+    border: 3px solid #16a08522;
+}
+.hq-info h4 {
+    color: #16a085;
+    font-size: 1.13rem;
+    margin-bottom: 6px;
     font-weight: 700;
-    margin-bottom: 18px;
+    text-align: center;
+}
+.hq-info p {
+    color: #333;
+    font-size: 1.01rem;
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+}
+.about-section, .tujuan-section, .manfaat-section, .portofolio-section, .headquarter-section {
+    background: linear-gradient(120deg, #f7fafd 80%, #e0f7fa 100%);
+    padding: 56px 32px 56px 32px;
+    border-bottom: 2px solid #e0e0e0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 36px auto;
+    box-sizing: border-box;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(44,62,80,0.06);
+    transition: box-shadow 0.2s;
+}
+.about-section h3, .tujuan-section h3, .manfaat-section h3, .portofolio-section h3, .headquarter-section h3 {
+    color: #222;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 24px;
     text-align: center;
     display: block;
     position: relative;
-    padding-bottom: 12px;
+    padding-bottom: 16px;
     width: 100%;
+    letter-spacing: 0.5px;
 }
-.about-section h3::after, .tujuan-section h3::after, .manfaat-section h3::after, .portofolio-section h3::after {
+.about-section h3::after, .tujuan-section h3::after, .manfaat-section h3::after, .portofolio-section h3::after, .headquarter-section h3::after{
     content: "";
     display: block;
-    margin: 12px auto 0 auto;
-    width: 80px;
-    height: 3px;
+    margin: 16px auto 0 auto;
+    width: 100px;
+    height: 4px;
     background: linear-gradient(90deg, #4F8EF7 0%, #16a085 100%);
     border-radius: 2px;
+    opacity: 0.8;
 }
 .about-section p, .tujuan-section p, .manfaat-section ul, .portofolio-section p {
     color: #333;
-    font-size: 1.05rem;
-    line-height: 1.7;
-    margin-top: 16px;
+    font-size: 1.13rem;
+    line-height: 1.8;
+    margin-top: 18px;
     margin-bottom: 0;
     text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .portofolio-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 36px;
-    margin-top: 32px;
+    margin-top: 36px;
     flex-wrap: wrap;
 }
 .portofolio-item {
     flex: 1 1 0;
-    min-width: 220px;
-    max-width: 320px;
-    background: #fff;
-    border: 1px solid #4F8EF7;
-    border-radius: 16px;
-    padding: 28px 18px 20px 18px;
-    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    min-width: 240px;
+    max-width: 340px;
+    background: #f7fafd;
+    border: 1.5px solid #4F8EF7;
+    border-radius: 20px;
+    padding: 32px 22px 24px 22px;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.10);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 24px;
-    transition: box-shadow 0.2s, border 0.2s;
+    margin-bottom: 32px;
+    transition: box-shadow 0.2s, border 0.2s, background 0.2s;
+    text-align: center;
 }
 .portofolio-item:hover {
-    box-shadow: 0 8px 24px rgba(44,62,80,0.18);
-    border: 1.5px solid #16a085;
+    box-shadow: 0 12px 32px rgba(44,62,80,0.18);
+    border: 2px solid #16a085;
+    background: #fff;
 }
 .portofolio-icon {
-    width: 56px;
-    height: 56px;
-    margin-bottom: 16px;
+    width: 96px;
+    height: 96px;
+    margin-bottom: 18px;
     object-fit: contain;
     filter: drop-shadow(0 2px 8px #4F8EF733);
 }
+.contact-desc {
+    color: #333;
+    font-size: 1.08rem;
+    text-align: center;
+    margin-bottom: 24px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.92;
+}
+
 .message-section {
     background: #f7fafd;
     padding: 40px 32px 60px 32px;
     min-height: 350px;
+    border-radius: 32px;
 }
 .message-section h3 {
     font-size: 1.5rem;
@@ -416,18 +500,18 @@ body {
 .footer {
     width: 100%;
     text-align: center;
-    padding: 28px 0 18px 0;
+    padding: 36px 0 22px 0;
     background: linear-gradient(90deg, #4F8EF7 0%, #16a085 100%);
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     letter-spacing: 0.5px;
     position: relative;
     bottom: 0;
-    box-shadow: 0 -2px 8px rgba(44,62,80,0.07);
+    box-shadow: 0 -2px 12px rgba(44,62,80,0.10);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
 }
 .footer .footer-tagline {
     font-size: 1rem;
@@ -435,5 +519,45 @@ body {
     opacity: 0.85;
     margin-top: 2px;
 }
+@media (max-width: 900px) {
+    .vision-section, .about-section, .tujuan-section, .manfaat-section, .portofolio-section {
+        padding: 36px 8vw 36px 8vw;
+        border-radius: 10px;
+    }
+    .vision-mission-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+    .headquarter-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+    }
+    .hq-card {
+        min-width: 220px;
+        max-width: 95vw;
+    }
+}
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 8px;
+    }
+    .navbar ul {
+        gap: 10px;
+    }
+    .hero-title {
+        font-size: 1.3rem;
+    }
+    .about-section h3, .tujuan-section h3, .manfaat-section h3, .portofolio-section h3 {
+        font-size: 1.2rem;
+    }
+    .footer {
+        font-size: 0.95rem;
+        padding: 18px 0 10px 0;
+    }
+}
+
 
 
